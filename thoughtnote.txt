@@ -1,0 +1,10 @@
+//Create just the home page of the Ecommerce website created earlier in React. The data is be static, used the same images as the earlier project. Used
+Bootstrap and CSS (with the same dimensions and colors as before) for this project as well. 
+in src -> Components -> Header  HomeCover Slider Footer . These components are created as mentioned the assignment.
+in Css -> Header.css Home.css Footer.css Slider.css file is created for each components.
+
+2. Place all these 4 components in Home.js (main component).
+3. In the App.js root component, create a single Route (/) that redirects to Home.js.
+4. Image folder i haven't created because all the images are taken as online link. Later On, will do that too.
+Added Fontawesome Library as mentioned in the project 
+//All the icon are created with this library only.

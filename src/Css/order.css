@@ -1,0 +1,16 @@
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) 
+{
+    .paypal-button{
+        margin-top:11rem !important;
+    }
+    .card-order{
+        height: 10rem !important;
+        width:100% !important;
+    }
+}
+@media only screen and (min-device-width :600px) and (max-device-width : 820px) 
+{
+   
+   
+    
+}

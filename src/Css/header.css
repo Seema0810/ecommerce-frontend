@@ -1,0 +1,121 @@
+/* google font added */
+
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Henny+Penny&family=Merriweather&family=Monoton&family=Montserrat:wght@900&family=PT+Serif:wght@400;700&family=Playpen+Sans:wght@800&family=Princess+Sofia&family=Source+Code+Pro&family=Ubuntu:wght@300&display=swap"); */
+
+/* styling the navbar */
+/* .bg-navbar {
+  background-color: #d0c6a6;
+}
+.brand-font {
+  font-family: "Princess Sofia", sans-serif;
+  font-size: 3rem;
+  color: #53539d;
+  font-weight: bolder;
+  margin-top: 10px !important;
+}
+.brand-font:hover {
+  color: White;
+}
+.input-bg-color {
+  background-color: rgb(88 179 130 / 36%);
+  border-color: #a19382bf;
+} */
+/* .search-button {
+  background-color: #4caf506e;
+  width: 2.5rem;
+  border-color: #2bc;
+} */
+/* cart icon on hover */
+/* .cart-icon:hover{
+  color:#d9eee9 !important;
+  font-size:22px !important;
+} */
+/* on hovering the search icon */
+/* .icon-hover:hover{
+  color:antiquewhite !important;
+} */
+/* Login css btn on home page is created using css3 button generator  */
+/* .login-btn {
+  font-size: 1rem;
+  font-family: Comic Sans MS;
+  width: 90px;
+  height: 32px;
+  border-width: 2px;
+  color: rgba(187, 215, 221, 1);
+  border-color: rgba(114, 97, 68, 1);
+  font-weight: bold;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  box-shadow: -4px 2px 11px 4px rgba(223, 206, 177, 1);
+  text-shadow: 0px 1px 0px rgba(136, 137, 148, 1);
+  background: linear-gradient(rgba(202, 134, 72, 1), rgba(93, 71, 93, 1));
+} */
+
+/* .login-btn:hover {
+  background: linear-gradient(rgba(93, 71, 93, 1), rgba(202, 134, 72, 1));
+} */
+/* styling the toggler button */
+/* .nav-toggle-btn {
+  background-color: #7a4346;
+  font-size: large;
+  margin-top: 1rem;
+  border-radius: 5px;
+} */
+
+/* button created using css3 button generator:--> Login button contact form*/
+/* .btn-contact {
+  background: #ebbfd3;
+  background-image: -webkit-linear-gradient(top, #ebbfd3, #c0c49f);
+  background-image: -moz-linear-gradient(top, #ebbfd3, #c0c49f);
+  background-image: -ms-linear-gradient(top, #ebbfd3, #c0c49f);
+  background-image: -o-linear-gradient(top, #ebbfd3, #c0c49f);
+  background-image: linear-gradient(to bottom, #ebbfd3, #c0c49f);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 3px 2px 3px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+  font-family: Georgia;
+  color: #7a4346;
+  font-size: 19px;
+  /* padding: 5px 20px 10px 20px; */
+  /* border: solid #598579 5px;
+  text-decoration: none;
+} */ 
+
+/* .btn-contact:hover {
+  background: #a4d2eb;
+  background-image: -webkit-linear-gradient(top, #a4d2eb, #d6aa8d);
+  background-image: -moz-linear-gradient(top, #a4d2eb, #d6aa8d);
+  background-image: -ms-linear-gradient(top, #a4d2eb, #d6aa8d);
+  background-image: -o-linear-gradient(top, #a4d2eb, #d6aa8d);
+  background-image: linear-gradient(to bottom, #a4d2eb, #d6aa8d);
+  text-decoration: none;
+} */
+
+.navlink-style{
+  margin-left:50%;
+}
+.search-field{
+  width:50% !important;
+}
+.cartTotal{
+  position:absolute;
+  margin-top:-0.6rem ;
+  margin-left: 0.8rem;
+  color:rgb(255, 0, 55);
+  font-weight: bold;
+}
+
+/* // media query for extra smaller devices */
+
+@media only screen and (max-width: 600px) {
+  .toggle-style{
+    margin-left:0 !important;
+  }
+}
+

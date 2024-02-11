@@ -1,0 +1,11 @@
+@media only screen and (min-device-width : 280px) and (max-device-width : 540px) 
+{
+  .sigleproduct-styling{
+    width:90vw !important;
+    margin:0 !important;
+    margin-top: 2rem !important;
+  }
+  .card-footer{
+    margin-top:5rem;
+  }
+}

@@ -1,0 +1,152 @@
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) 
+{
+    .admin-product-image{
+        height:6rem !important;
+        width:6rem !important;
+    }
+    .admin-product-margin{
+        margin-left: 0 !important;
+    }
+    .admin-product-price{
+        margin:0.5rem !important;
+    }
+    .admin-delete-btn{
+        margin-top:0 !important;
+        float: inline-start !important;
+        margin-left: 0 !important;
+    }
+    .admin-card{
+        height: 31vh !important;
+    }
+    .admin-btn-add{
+        margin-top: 4rem !important;
+        margin-left: 18rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+    .admin-btn-view{
+        margin-top: 6rem !important;
+        margin-left: 18rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+}
+@media only screen and (min-device-width : 600px) and (max-device-width : 821px) 
+{
+    .admin-product-image{
+        height:6rem !important;
+        width:6rem !important;
+    }
+    .admin-product-margin{
+        margin-left: 0 !important;
+    }
+    .admin-product-price{
+        margin:0.5rem !important;
+    }
+    .admin-delete-btn{
+        margin-top:3rem !important;
+        float: inline-start !important;
+        margin-left: 0 !important;
+    }
+    .admin-card{
+        height: 25vh !important;
+    }
+    .admin-btn-add{
+        margin-top: 6rem !important;
+        margin-left: 39rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+    .admin-btn-view{
+        margin-top: 8rem !important;
+        margin-left: 39rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+}
+@media only screen and (min-device-width : 480px) and (max-device-width : 599px) 
+{
+    .admin-product-image{
+        height:6rem !important;
+        width:6rem !important;
+    }
+    .admin-product-margin{
+        margin-left: 0 !important;
+    }
+    .admin-product-price{
+        margin:0.5rem !important;
+    }
+    .admin-delete-btn{
+        margin-top:3rem !important;
+        float: inline-start !important;
+        margin-left: 0 !important;
+    }
+    .admin-card{
+        height: 35vh !important;
+    }
+    .admin-btn-add{
+        margin-top: 5.5rem !important;
+        margin-left: 30rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+        z-index: 1;
+    }
+    .admin-btn-view{
+        margin-top: 7.5rem !important;
+        margin-left: 30rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+        z-index: 1;
+    }
+}
+
+
+@media only screen and (min-device-width :822px) and (max-device-width : 1024px) 
+{
+    .admin-product-image{
+        height:6rem !important;
+        width:6rem !important;
+    }
+    .admin-product-margin{
+        margin-left: 0 !important;
+    }
+    .admin-product-price{
+        margin:0.5rem !important;
+    }
+    .admin-delete-btn{
+        margin-top:3rem !important;
+        float: inline-start !important;
+        margin-left: 0 !important;
+    }
+    .admin-card{
+        height: 15vh !important;
+    }
+    .admin-btn-add{
+        margin-top: 8rem !important;
+        margin-left: 50rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+    .admin-btn-view{
+        margin-top: 10rem !important;
+        margin-left: 50rem !important;
+        position: fixed !important;
+        width: 6rem !important;
+        font-size: 10px !important;
+        border-top-left-radius: 5rem !important;
+    }
+}

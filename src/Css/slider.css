@@ -1,0 +1,129 @@
+/* CAROUSEL FEATURED PRODUCTS STYLING */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-carousel {
+    width: calc(100% / 5);
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 5px rgb(75, 80, 82);
+  }
+  .carousel-control-prev-icon {
+    margin-left: -120px;
+    margin-top: -20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(152, 94, 106) !important;
+    color: beige !important;
+  }
+  .carousel-control-next-icon {
+    margin-right: -120px;
+    margin-top: -20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(152, 94, 106) !important;
+    color: beige !important;
+  }
+  
+  /* showing the only first  cards of card-carousel for small sized screen */
+  @media screen and (min-width: 279px) and (max-width: 576px) {
+    .card:not(:first-child) {
+      display: none;
+    }
+    .card {
+      width: 100%;
+    }
+    .carousel-control-prev-icon {
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+    .carousel-control-next-icon {
+      margin-right: -20px;
+      margin-top: -20px;
+    }
+    .card-img-top {
+      height: 25vh;
+    }
+    .card-body {
+      height: 20vh;
+    }
+    /* styling the carousel image for smaller screen */
+    .carousel-image{
+      height:25rem !important;
+    }
+    /* styling the content on image  */
+    .div-text {
+      position: absolute;
+      margin-top: -300px;
+    }
+    .businice-logo {
+      font-size: 1.5rem;
+      margin: auto !important;
+    }
+    
+    .nav-toggle-btn {
+      background-color: #7a4346;
+      font-size: large;
+      margin-top: 1.5rem;
+      margin-left: 4px;
+     
+      border-radius: 5px;
+    }
+  
+    .span-icon {
+      height:1.5em;
+      /* margin:0; */
+  
+    }
+    /* styling the arrow button for smaller devices  */
+    .arrow-up{
+      margin-top: -180% !important;
+    }
+    .cart-margin{
+      margin-top: 13rem !important;
+    }
+  }
+  /* CART-ADD to CART BUTTON STYLING */
+
+.cart-btn {
+  font-size: 15px;
+  font-family: Comic Sans MS;
+
+  height: 35px;
+  border-width: 2px;
+  color: #fff;
+  border-color: rgba(97, 100, 180, 1);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: inset -10px -7px 6px -6px #23395e;
+  text-shadow: inset -43px 50px 48px #263666;
+  background: linear-gradient(rgba(56, 61, 136, 1), rgba(30, 150, 153, 1));
+}
+
+
+
+
+.cart-btn:hover {
+  background: linear-gradient(rgb(123, 213, 214), rgba(56, 61, 136, 1));
+}
+/* add to cart styling ended  */
+/* add to cart styling ended  */
+
+/* Styling PRODUCTS PAGE */
+.card-products {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px 5px rgb(75, 80, 82);
+}
+.card-products:hover{
+  transform: scale3d(0.95, 0.95, 0.95);
+  cursor:pointer;
+}
+.card-img-top {
+  height: 25vh;
+}

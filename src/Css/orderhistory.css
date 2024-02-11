@@ -1,0 +1,19 @@
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) 
+{
+    .table-responsiveness{
+        width:100vw !important;
+    }
+    .image-responsive{
+        width:3rem !important;
+    }
+    .order-row-design{
+        font-size: 15px !important;
+        text-align: left !important;
+    }
+    .order-row-style{
+        height: 1.5rem !important;
+    }
+    .order-id-font-size{
+        font-size: 10px !important;
+    }
+}

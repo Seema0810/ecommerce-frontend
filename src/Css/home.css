@@ -1,0 +1,16 @@
+/* styling the content on home image carousel */
+.div-text {
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 15%;
+  }
+  .businice-logo {
+    /* background-color: white; */
+    z-index: 4;
+    color: #161922;
+    display: inline;
+    font-size: 3rem;
+    font-family: "Princess Sofia", sans-serif;
+    font-weight: 900;
+    text-shadow: 5px 5px #5ab446;
+  }

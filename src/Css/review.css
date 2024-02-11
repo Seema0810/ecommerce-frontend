@@ -1,0 +1,25 @@
+@media only screen and (min-device-width : 280px) and (max-device-width : 540px) 
+{
+    .review-heading{
+        margin:0 !important;
+    }
+    .form-select{
+        margin:0 !important;
+        margin-left: 1rem !important;
+        width: 90vw !important;
+        margin-top:2rem !important;
+    }
+
+
+}
+@media only screen and (min-device-width : 600px) and (max-device-width : 820px) 
+{
+  
+    .form-select{
+        margin:0 !important;
+        margin-left: 1rem !important;
+        width: 80vw !important;
+        margin-top:2rem !important;
+    }
+
+}
