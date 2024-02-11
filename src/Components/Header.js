@@ -81,6 +81,7 @@ const Header = () => {
 
 
   const itemsInCart= getTotalItems();
+
   const handleCart = () => {
     navigate("/cart");
   };
@@ -122,6 +123,10 @@ const Header = () => {
   const handleLogout =()=>{
     localStorage.removeItem("token");
     navigate("/");
+  }
+
+  const handleOrderhistory=()=>{
+    navigate("/orderhistory");
   }
 
   return (
@@ -180,28 +185,28 @@ const Header = () => {
             </Col>
                 <Col  xs={12} md={6}>
                 <Nav className="mx-auto toggle-style  ">
-                <Nav.Link href="/orderhistory">
-                    <button className=" border border-o " onClick={handleCart}>
+              
+                    <button className=" border border-o " onClick={handleOrderhistory}>
                      History 
                     </button>
-                  </Nav.Link>
-                  <Nav.Link href="/cart">
+                 
+               
                     <div>
                     <span className="cartTotal">{itemsInCart?itemsInCart:""}</span>
                     <button className=" border border-o " onClick={handleCart}>
                       <i className="fa-solid fa-cart-shopping"></i>                     
                     </button>                   
                     </div>
-                  </Nav.Link>                 
+                              
                     <button className="border border-o mt-2 " style={{height:"1.8rem"}} onClick={handleAdmin}>
                       Admin
                     </button>
                   
-                  <Nav.Link href="/">
+                  
                   <button className=" border border-o  " onClick={handleLogout}>
                      {token && "Logout"}
                     </button>
-                    </Nav.Link>
+                    
                 </Nav>
                 </Col>
               </Navbar.Collapse>
