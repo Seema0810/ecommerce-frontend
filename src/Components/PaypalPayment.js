@@ -38,7 +38,7 @@ const PaypalPayment = ({ orderItems }) => {
     const body = {
       products,
       paymentId: paymentId,
-      amount: totalAmount,
+      amount:totalAmount,
     };
 
     const headers = {
@@ -78,10 +78,20 @@ const PaypalPayment = ({ orderItems }) => {
       >
         <PayPalButtons
           createOrder={(data, actions) => {
-            console.log("paypay payment0", products);
-            return actions.order.create({
+            console.log("paypay payment0",{
               purchase_units: products.map((item) => ({
                 description: item.productRef.title,
+                amount: {
+                  currency_code: "USD",
+                  value: (item.quantity * item.productRef.price).toFixed(2),
+                },
+              })),
+            });
+            return actions.order.create(
+              {
+              purchase_units: products.map((item) => ({
+                description: item.productRef.title,
+                reference_id:item._id,
                 amount: {
                   currency_code: "USD",
                   value: (item.quantity * item.productRef.price).toFixed(2),

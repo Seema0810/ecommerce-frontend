@@ -4,7 +4,7 @@ import axios from "axios";
 import { API_BASE_URL } from "../config";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { UPDATE_CART } from "../redux/actions/types";
+import {RESET_CART } from "../redux/actions/types";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Css/cart.css";
@@ -31,7 +31,7 @@ const Cart = () => {
       console.log("cart response of product", res.data);
       if (res.status === 200 && res.data.cart && res.data.cart.products) {
         // Check if res.data.cart and res.data.cart.products are not null/undefined
-        dispatch({ type: UPDATE_CART, payload: res.data.cart.products });
+        dispatch({ type: RESET_CART, payload: res.data.cart.products });
         setAddProducts(res.data.cart.products);
 
         console.log("cart product details is", res.data.cart.products);
@@ -154,8 +154,8 @@ const Cart = () => {
             <h2 className="mt-2">Shopping Cart</h2>
             {addProducts.map((product, index) => {
               return (
-                <Col md={8} xs={12} sm={8}>
-                <Card key={index} className="card-height card-width" >
+                <Col md={8} xs={12} sm={8}  key={index}>
+                <Card className="card-height card-width" >
                   <Card.Body>
                     <Row >
                       <Col md={4} xs={12} sm={12}>

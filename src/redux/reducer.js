@@ -1,4 +1,4 @@
-import {  UPDATE_CART,CLEAR_CART } from "./actions/types";
+import {  UPDATE_CART, RESET_CART,CLEAR_CART } from "./actions/types";
 const initialState = {
     cartItems:[]
   };
@@ -15,6 +15,11 @@ const initialState = {
         ...state,
         cartItems: [],
       };
+      case RESET_CART:
+        return {
+          ...state,
+          cartItems: [...action.payload],
+        };
       default:
         return state;
     }

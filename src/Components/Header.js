@@ -46,41 +46,36 @@ const Header = () => {
 
   
 
-  // getting the total no. of items
-  const getTotalItems = () => {
-    return addProducts.reduce((total, product) => {
-      return total + product.quantity;
-    }, 0);
-  }; 
-  // getting the cart details
-  const getProductDetail = async () => {
-    try {
-      const res = await axios.get(`${API_BASE_URL}/api/cart`, { headers });
-      console.log("cart response of product", res?.data);
-      if (res.status === 200 && res.data.cart && res.data.cart.products) {
-        // Check if res.data.cart and res.data.cart.products are not null/undefined
-        dispatch({ type: UPDATE_CART, payload: res.data.cart.products });
-        setCartProducts(res.data.cart.products);
+ 
+  // // getting the cart details
+  // const getProductDetail = async () => {
+  //   try {
+  //     const res = await axios.get(`${API_BASE_URL}/api/cart`, { headers });
+  //     console.log("cart response of product", res?.data);
+  //     if (res.status === 200 && res.data.cart && res.data.cart.products) {
+  //       // Check if res.data.cart and res.data.cart.products are not null/undefined
+  //       dispatch({ type: UPDATE_CART, payload: res.data.cart.products });
+  //       setCartProducts(res.data.cart.products);
 
-        console.log("cart product details is", res.data.cart.products);
-      } else {
-        toast.error(res?.data?.message);
+  //       console.log("cart product details is", res.data.cart.products);
+  //     } else {
+  //       toast.error(res?.data?.message);
        
-        // Handle the case where the response does not have the expected structure
-        console.error("Invalid response structure from the server");
-      }
-    } catch (error) {
-      console.log(error);
+  //       // Handle the case where the response does not have the expected structure
+  //       console.error("Invalid response structure from the server");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
       
-    }
-  };
-  useEffect(() => {
-    getProductDetail();
-  }, []);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getProductDetail();
+  // }, []);
 
 
 
-  const itemsInCart= getTotalItems();
+
 
   const handleCart = () => {
     navigate("/cart");
@@ -119,7 +114,7 @@ const Header = () => {
     }
   };
 
-  
+
 
   //handling logout functionality here
   const handleLogout =()=>{
@@ -188,26 +183,27 @@ const Header = () => {
                 <Col  xs={12} md={6}>
                 <Nav className="mx-auto toggle-style  ">
               
-                    <button className=" border border-o " onClick={handleOrderhistory}>
+                    <button className=" border border-o mx-1 mt-2 "style={{height:"1.8rem"}} onClick={handleOrderhistory}>
                      History 
                     </button>
                  
                
                     <div>
-                    <span className="cartTotal">{itemsInCart?itemsInCart:""}</span>
-                    <button className=" border border-o " onClick={handleCart}>
+                  
+                    <button className=" border border-o mx-1 mt-2 " style={{height:"1.8rem"}} onClick={handleCart}>
                       <i className="fa-solid fa-cart-shopping"></i>                     
                     </button>                   
                     </div>
                               
-                    <button className="border border-o mt-2 " style={{height:"1.8rem"}} onClick={handleAdmin}>
+                    <button className="border border-o mt-2 mx-1 " style={{height:"1.8rem"}} onClick={handleAdmin}>
                       Admin
                     </button>
                   
-                  
-                  <button className=" border border-o  " onClick={handleLogout}>
-                     {token && "Logout"}
+                  {token &&
+                  <button className=" border border-o mt-2 mx-1 " style={{height:"1.8rem"}} onClick={handleLogout}>
+                     Logout
                     </button>
+}
                     
                 </Nav>
                 </Col>
